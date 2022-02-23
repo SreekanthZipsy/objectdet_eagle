@@ -3,7 +3,7 @@
 ### Summary of the Object Detection Model
 
 * Model name: YoloV4 - Darknet framework. 
-* You can find Dataset here: https://drive.google.com/file/d/1sVPCa38Xg7bgaG7KU62gjHXcAwJFrFTw/view?usp=sharing, Framework: https://github.com/AlexeyAB/darknet. 
+* You can find Dataset here: https://drive.google.com/file/d/1sVPCa38Xg7bgaG7KU62gjHXcAwJFrFTw/view?usp=sharing, Framework: https://github.com/AlexeyAB/darknet, you can find the weights here: https://drive.google.com/file/d/11FH8qWNvu0C2EXgHkztBr3p3rHyws99D/view?usp=sharing. 
 * YoloV4 had to be build on your system from source to use this model. You can check here https://github.com/AlexeyAB/darknet#how-to-compile-on-linuxmacos-using-cmake. 
 * Once darknet is build, we can work on that repository, to create a annotations required fro Yolo training you can run **"python yoloformat.py"**
 * Yolo is one stage detector, YOLOV4 Model is updated version of V3 with some new training techniques like **Cross-iteration Batch Normalisation etc.. & new Activation Mish**. 
