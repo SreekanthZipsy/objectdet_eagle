@@ -5,6 +5,7 @@
 * Model name: YoloV4 - Darknet framework. 
 * You can find Dataset here: https://drive.google.com/file/d/1sVPCa38Xg7bgaG7KU62gjHXcAwJFrFTw/view?usp=sharing, Framework: https://github.com/AlexeyAB/darknet. 
 * YoloV4 had to be build on your system from source to use this model. You can check here https://github.com/AlexeyAB/darknet#how-to-compile-on-linuxmacos-using-cmake. 
+* Once darknet is build, we can work on that repository, to create a annotations required fro Yolo training you can run **"python yoloformat.py"**
 * Yolo is one stage detector, YOLOV4 Model is updated version of V3 with some new training techniques like **Cross-iteration Batch Normalisation etc.. & new Activation Mish**. 
 * This architecture also uses new Data Augmentation techniques like **Mosaic & Self Adversarial Training**. All these tricks made V4 **fast & more accurate** compared to other architectures.
 * **Primary Analysis:** After making the data ready for Yolov4 training along with annotations, i have took 10% of data separately and kept it for validation while training. 
@@ -25,6 +26,7 @@
 * Like i said after training with Default Anchors, i calculated custom anchors for my dataset & trained again. You can find the anchors to in file "yolov4-objnew.cfg".
 * Initially i used pretrained model provided, to get better results **"./darknet detector train data/obj.data yolov4-objnew.cfg yolov4.conv.137"**
 * You can check the mAP in between to see the performance **"./darknet detector map data/obj.data yolov4-objnew.cfg backup\yolov4-objnew_2000.weights"**.
+* You can find here different ways to check the model on Image, Set of Images, Video etc.. **"https://github.com/AlexeyAB/darknet#how-to-use-on-the-command-line"**
 
  
 
