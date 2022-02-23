@@ -26,7 +26,9 @@
 * Like i said after training with Default Anchors, i calculated custom anchors for my dataset & trained again. You can find the anchors to in file "yolov4-objnew.cfg".
 * Initially i used pretrained model provided, to get better results **"./darknet detector train data/obj.data yolov4-objnew.cfg yolov4.conv.137"**
 * You can check the mAP in between to see the performance **"./darknet detector map data/obj.data yolov4-objnew.cfg backup\yolov4-objnew_2000.weights"**.
+* You can run on set of images like test set & get results in a json format. **"./darknet detector test obj.data yolov4-objnew.cfg yolov4-objnew_2000.weights -ext_output -dont_show -out result.json < test.txt"**
 * You can find here different ways to check the model on Image, Set of Images, Video etc.. **"https://github.com/AlexeyAB/darknet#how-to-use-on-the-command-line"**
+* From **"results.json"** file we can make predicted images using this script **"python inference_json.py"**.
 
  
 
